@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>설비 통합관제 화면 시안</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+body{margin:0;padding:32px 40px 64px;background:#F5F6FA;color:#202224;font-family:'Noto Sans KR',system-ui,sans-serif;font-size:14px}
+h1{margin:0 0 4px;font-size:24px}
+p{margin:0 0 8px;color:#5F6775}
+h2{margin:36px 0 14px;font-size:16px;color:#002C5F}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,360px);gap:20px}
+.card{display:flex;flex-direction:column;gap:4px;padding:0 0 12px;background:#fff;border-radius:14px;box-shadow:0 2px 12px rgba(16,24,40,.06);color:inherit;text-decoration:none;overflow:hidden}
+.card:hover{box-shadow:0 6px 20px rgba(0,44,95,.18)}
+.thumb{display:block;width:360px;overflow:hidden;border-bottom:1px solid #E3E6EC}
+.thumb iframe{width:1440px;border:0;transform:scale(.25);transform-origin:0 0;pointer-events:none}
+.name{padding:8px 14px 0;font-weight:700}
+.file{padding:0 14px;font-size:12px;color:#5F6775}
+</style>
+</head>
+<body>
+<h1>설비 통합관제 화면 시안</h1>
+<p>화면을 누르면 실제 크기로 열림</p>
+<h2>공통 규칙 견본</h2>
+<div class="grid">
+<a class="card" href="screens/H00_Rules.html"><span class="thumb" style="height:202px"><iframe src="screens/H00_Rules.html" loading="lazy" tabindex="-1" title="공통 규칙 견본" style="height:810px"></iframe></span><span class="name">공통 규칙 견본</span><span class="file">screens/H00_Rules.html</span></a>
+</div>
+<h2>공통 틀과 종합현황</h2>
+<div class="grid">
+<a class="card" href="screens/Main.html"><span class="thumb" style="height:202px"><iframe src="screens/Main.html" loading="lazy" tabindex="-1" title="공통 틀" style="height:810px"></iframe></span><span class="name">공통 틀</span><span class="file">screens/Main.html</span></a>
+<a class="card" href="screens/S02_Normal.html"><span class="thumb" style="height:202px"><iframe src="screens/S02_Normal.html" loading="lazy" tabindex="-1" title="종합현황 평상시" style="height:810px"></iframe></span><span class="name">종합현황 평상시</span><span class="file">screens/S02_Normal.html</span></a>
+<a class="card" href="screens/S02_Fault.html"><span class="thumb" style="height:202px"><iframe src="screens/S02_Fault.html" loading="lazy" tabindex="-1" title="종합현황 고장 발생 시" style="height:810px"></iframe></span><span class="name">종합현황 고장 발생 시</span><span class="file">screens/S02_Fault.html</span></a>
+</div>
+<h2>로그인과 설비현황</h2>
+<div class="grid">
+<a class="card" href="screens/S01_Login.html"><span class="thumb" style="height:202px"><iframe src="screens/S01_Login.html" loading="lazy" tabindex="-1" title="로그인" style="height:810px"></iframe></span><span class="name">로그인</span><span class="file">screens/S01_Login.html</span></a>
+<a class="card" href="screens/S03_Equip.html"><span class="thumb" style="height:202px"><iframe src="screens/S03_Equip.html" loading="lazy" tabindex="-1" title="설비현황 설비별" style="height:810px"></iframe></span><span class="name">설비현황 설비별</span><span class="file">screens/S03_Equip.html</span></a>
+<a class="card" href="screens/S03_Parts.html"><span class="thumb" style="height:202px"><iframe src="screens/S03_Parts.html" loading="lazy" tabindex="-1" title="설비현황 부품별" style="height:810px"></iframe></span><span class="name">설비현황 부품별</span><span class="file">screens/S03_Parts.html</span></a>
+<a class="card" href="screens/S03_Stats.html"><span class="thumb" style="height:202px"><iframe src="screens/S03_Stats.html" loading="lazy" tabindex="-1" title="설비현황 통계" style="height:810px"></iframe></span><span class="name">설비현황 통계</span><span class="file">screens/S03_Stats.html</span></a>
+</div>
+<h2>설비 상세와 부품 교체 등록</h2>
+<div class="grid">
+<a class="card" href="screens/S04_Parts.html"><span class="thumb" style="height:202px"><iframe src="screens/S04_Parts.html" loading="lazy" tabindex="-1" title="설비 상세 장착 부품" style="height:810px"></iframe></span><span class="name">설비 상세 장착 부품</span><span class="file">screens/S04_Parts.html</span></a>
+<a class="card" href="screens/S04_Replace.html"><span class="thumb" style="height:202px"><iframe src="screens/S04_Replace.html" loading="lazy" tabindex="-1" title="설비 상세 교체 이력" style="height:810px"></iframe></span><span class="name">설비 상세 교체 이력</span><span class="file">screens/S04_Replace.html</span></a>
+<a class="card" href="screens/S04_Fault.html"><span class="thumb" style="height:202px"><iframe src="screens/S04_Fault.html" loading="lazy" tabindex="-1" title="설비 상세 고장 이력" style="height:810px"></iframe></span><span class="name">설비 상세 고장 이력</span><span class="file">screens/S04_Fault.html</span></a>
+<a class="card" href="screens/S04_Info.html"><span class="thumb" style="height:202px"><iframe src="screens/S04_Info.html" loading="lazy" tabindex="-1" title="설비 상세 설비 정보" style="height:810px"></iframe></span><span class="name">설비 상세 설비 정보</span><span class="file">screens/S04_Info.html</span></a>
+<a class="card" href="screens/S05_ReplaceForm.html"><span class="thumb" style="height:202px"><iframe src="screens/S05_ReplaceForm.html" loading="lazy" tabindex="-1" title="부품 교체 등록" style="height:810px"></iframe></span><span class="name">부품 교체 등록</span><span class="file">screens/S05_ReplaceForm.html</span></a>
+</div>
+<h2>모니터링과 알람관리</h2>
+<div class="grid">
+<a class="card" href="screens/S06_Trend.html"><span class="thumb" style="height:202px"><iframe src="screens/S06_Trend.html" loading="lazy" tabindex="-1" title="모니터링" style="height:810px"></iframe></span><span class="name">모니터링</span><span class="file">screens/S06_Trend.html</span></a>
+<a class="card" href="screens/S07_Now.html"><span class="thumb" style="height:202px"><iframe src="screens/S07_Now.html" loading="lazy" tabindex="-1" title="알람관리 현재 알람" style="height:810px"></iframe></span><span class="name">알람관리 현재 알람</span><span class="file">screens/S07_Now.html</span></a>
+<a class="card" href="screens/S07_History.html"><span class="thumb" style="height:202px"><iframe src="screens/S07_History.html" loading="lazy" tabindex="-1" title="알람관리 이력" style="height:810px"></iframe></span><span class="name">알람관리 이력</span><span class="file">screens/S07_History.html</span></a>
+<a class="card" href="screens/S07_Stats.html"><span class="thumb" style="height:202px"><iframe src="screens/S07_Stats.html" loading="lazy" tabindex="-1" title="알람관리 통계" style="height:810px"></iframe></span><span class="name">알람관리 통계</span><span class="file">screens/S07_Stats.html</span></a>
+</div>
+<h2>알람 상세 단계별</h2>
+<div class="grid">
+<a class="card" href="screens/S08_1_New.html"><span class="thumb" style="height:230px"><iframe src="screens/S08_1_New.html" loading="lazy" tabindex="-1" title="알람 상세 미확인" style="height:920px"></iframe></span><span class="name">알람 상세 미확인</span><span class="file">screens/S08_1_New.html</span></a>
+<a class="card" href="screens/S08_2_Ack.html"><span class="thumb" style="height:230px"><iframe src="screens/S08_2_Ack.html" loading="lazy" tabindex="-1" title="알람 상세 확인" style="height:920px"></iframe></span><span class="name">알람 상세 확인</span><span class="file">screens/S08_2_Ack.html</span></a>
+<a class="card" href="screens/S08_3_Action.html"><span class="thumb" style="height:230px"><iframe src="screens/S08_3_Action.html" loading="lazy" tabindex="-1" title="알람 상세 조치" style="height:920px"></iframe></span><span class="name">알람 상세 조치</span><span class="file">screens/S08_3_Action.html</span></a>
+<a class="card" href="screens/S08_4_Verify.html"><span class="thumb" style="height:230px"><iframe src="screens/S08_4_Verify.html" loading="lazy" tabindex="-1" title="알람 상세 효과 확인" style="height:920px"></iframe></span><span class="name">알람 상세 효과 확인</span><span class="file">screens/S08_4_Verify.html</span></a>
+<a class="card" href="screens/S08_5_Closed.html"><span class="thumb" style="height:230px"><iframe src="screens/S08_5_Closed.html" loading="lazy" tabindex="-1" title="알람 상세 종료" style="height:920px"></iframe></span><span class="name">알람 상세 종료</span><span class="file">screens/S08_5_Closed.html</span></a>
+</div>
+<h2>설비관리</h2>
+<div class="grid">
+<a class="card" href="screens/S09_Equip.html"><span class="thumb" style="height:202px"><iframe src="screens/S09_Equip.html" loading="lazy" tabindex="-1" title="설비관리 설비" style="height:810px"></iframe></span><span class="name">설비관리 설비</span><span class="file">screens/S09_Equip.html</span></a>
+<a class="card" href="screens/S09_Lines.html"><span class="thumb" style="height:202px"><iframe src="screens/S09_Lines.html" loading="lazy" tabindex="-1" title="설비관리 라인 배치" style="height:810px"></iframe></span><span class="name">설비관리 라인 배치</span><span class="file">screens/S09_Lines.html</span></a>
+<a class="card" href="screens/S09_Items.html"><span class="thumb" style="height:202px"><iframe src="screens/S09_Items.html" loading="lazy" tabindex="-1" title="설비관리 데이터 항목" style="height:810px"></iframe></span><span class="name">설비관리 데이터 항목</span><span class="file">screens/S09_Items.html</span></a>
+<a class="card" href="screens/S09_Parts.html"><span class="thumb" style="height:202px"><iframe src="screens/S09_Parts.html" loading="lazy" tabindex="-1" title="설비관리 장착 부품" style="height:810px"></iframe></span><span class="name">설비관리 장착 부품</span><span class="file">screens/S09_Parts.html</span></a>
+<a class="card" href="screens/S10_EquipForm.html"><span class="thumb" style="height:202px"><iframe src="screens/S10_EquipForm.html" loading="lazy" tabindex="-1" title="설비 등록" style="height:810px"></iframe></span><span class="name">설비 등록</span><span class="file">screens/S10_EquipForm.html</span></a>
+</div>
+<h2>시스템관리</h2>
+<div class="grid">
+<a class="card" href="screens/S11_Rules.html"><span class="thumb" style="height:202px"><iframe src="screens/S11_Rules.html" loading="lazy" tabindex="-1" title="시스템관리 판정 설정" style="height:810px"></iframe></span><span class="name">시스템관리 판정 설정</span><span class="file">screens/S11_Rules.html</span></a>
+<a class="card" href="screens/S11_Calc.html"><span class="thumb" style="height:202px"><iframe src="screens/S11_Calc.html" loading="lazy" tabindex="-1" title="시스템관리 계산 기준값" style="height:810px"></iframe></span><span class="name">시스템관리 계산 기준값</span><span class="file">screens/S11_Calc.html</span></a>
+<a class="card" href="screens/S11_Accounts.html"><span class="thumb" style="height:202px"><iframe src="screens/S11_Accounts.html" loading="lazy" tabindex="-1" title="시스템관리 계정 담당자" style="height:810px"></iframe></span><span class="name">시스템관리 계정 담당자</span><span class="file">screens/S11_Accounts.html</span></a>
+<a class="card" href="screens/S11_Kakao.html"><span class="thumb" style="height:202px"><iframe src="screens/S11_Kakao.html" loading="lazy" tabindex="-1" title="시스템관리 카카오톡" style="height:810px"></iframe></span><span class="name">시스템관리 카카오톡</span><span class="file">screens/S11_Kakao.html</span></a>
+<a class="card" href="screens/S11_Comm.html"><span class="thumb" style="height:202px"><iframe src="screens/S11_Comm.html" loading="lazy" tabindex="-1" title="시스템관리 통신 현황" style="height:810px"></iframe></span><span class="name">시스템관리 통신 현황</span><span class="file">screens/S11_Comm.html</span></a>
+<a class="card" href="screens/S11_Log.html"><span class="thumb" style="height:202px"><iframe src="screens/S11_Log.html" loading="lazy" tabindex="-1" title="시스템관리 변경 이력" style="height:810px"></iframe></span><span class="name">시스템관리 변경 이력</span><span class="file">screens/S11_Log.html</span></a>
+</div>
+</body>
+</html>
