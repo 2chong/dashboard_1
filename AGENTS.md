@@ -8,6 +8,8 @@
 
 - `index.html` 화면 목록
 - `screens/` 화면마다 HTML 파일 1개
+- `docs/` 문서 PDF. 화면설계서 `screen-spec.pdf`. 기능 목록 수정본 `function-list.pdf`. 기능 변경 내역 `function-changes.pdf`. 요구사항정의서 `requirements.pdf`. 공통 동작 정의서 `common-behavior.pdf`
+  - 문서를 다시 만들면 같은 이름으로 덮어쓴다. Confluence의 화면 설계 요약 쪽이 이 주소를 가리킨다
 - 화면 크기는 1440 × 810. 알람 상세 `S08_*` 는 1440 × 920
 - 스타일은 태그의 `style` 속성에 직접 적는다. 별도 CSS 파일과 빌드 과정이 없다
 - HTML 파일이 원본이다. 고칠 때는 해당 화면 파일을 직접 고친다
